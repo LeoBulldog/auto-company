@@ -1,0 +1,127 @@
+﻿<html>
+    <head>
+        <title>Formulario Clientes</title>
+    </head>
+    <style>
+        #Cli{border: black solid 2px;
+            background-color:rgba(0, 119, 255, 0.623);
+            font-style: normal;
+            color: black;
+            width: 800px;
+            height: 550px;
+            float: auto;
+            position: relative;
+	    	left:20%;
+    		top:15%;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border-radius: 5%;
+
+        }
+        #bot{background-color: rgb(133, 182, 0);
+            border: none;
+            color: white;
+            padding: 7px 40px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 2%;
+        }
+        #po{ color: brown;
+        }
+        input{background-color:  rgb(95, 255, 247);
+            color: cornflowerblue;
+            border-radius: 5%;
+        }
+        select{
+            color:cornflowerblue;
+            background-color: rgb(95, 255, 247);
+        border-radius: 5%;
+        }
+   </style>
+   
+    <body>
+        <div id="Cli">
+            <h2>Clientes</h2>
+            <form action="cliente.php" method="get" id="po">
+                Nome:
+                <input type="text" name="nome" maxlength="50" size="35"
+                placeholder="Digite seu nome nome completo" required>
+                <br>
+                <hr>
+                Gênero:
+                <input type="radio" name="sexo" checked value="M" > Masculino
+                <input type="radio" name="sexo" checked value="F" checked> Feminino
+                <br>
+                <hr>
+                Data de nascimento:
+                <input type="date" name="data" required>
+                <br>
+                <hr>
+                CPF/CNPJ:
+                <input type="text" size="35" maxlength="14" name="CPF/CNPJ" placeholder="Digite seu CPF/CNPJ" required>
+                <br>
+                <hr>
+                Pessoa Fisica:
+                <input type="radio" name="pessoa" checked value="1"> SIM
+				<input type="radio" name="pessoa" checked value="0"> NÃO
+                <br>
+                <hr>
+                UF:
+                <select name="UF" required>
+                    <option value="">UF</option>
+                    <option value="AC">AC</option>
+                    <option value="AL">AL</option>
+                    <option value="AP">AP</option>
+                    <option value="AM">AM</option>
+                    <option value="BA">BA</option>
+                    <option value="CE">CE</option>
+                    <option value="ES">ES</option>
+                    <option value="GO">GO</option>
+                    <option value="MA">MA</option>
+                    <option value="MT">MT</option>
+                    <option value="MS">MS</option>
+                    <option value="MG">MG</option>
+                    <option value="PA">PA</option>
+                    <option value="PB">PB</option>
+                    <option value="PR">PR</option>
+                    <option value="PE">PE</option>
+                    <option value="PI">PI</option>
+                    <option value="RJ">RJ</option>
+                    <option value="RN">RN</option>
+                    <option value="RS">RS</option>
+                    <option value="RO">RO</option>
+                    <option value="RR">RR</option>
+                    <option value="SC">SC</option>
+                    <option value="SP">SP</option>
+                    <option value="SE">SE</option>
+                    <option value="TO">TO</option>
+                    <option value="DF">DF</option>
+                </select>
+                <br>
+                <hr>
+                CEP:
+                <input name="CEP" type="text" size="35" maxlength="8" name="CEP" placeholder="Digite seu CEP" required>
+                <br>
+                <hr>
+                Telefone:
+                <input name="Tel" type="text" size="35" maxlength="11" placeholder="Informe seu telefone" required>
+                <br>
+                <hr>
+                E-mail:
+                <input name="Email" type="text" size="35" maxlength="30" name="Email" placeholder="Digite seu E-mail" required>
+                <br>
+                <hr>
+                Autoriza a empresa, informa-lo sobre promoções:
+                <input name="autorizacao" type="radio"  value="1">SIM
+				<input name="autorizacao" type="radio" checked value="0">NÃO
+                <br>
+                <hr>
+                Comentarios:
+                <input type="text" size="35" name="Comentarios" placeholder="Deixe seu comentario" >
+                <button id="bot">Enviar</button>
+            </form>
+        </div>
+
+    </body>
+</html>

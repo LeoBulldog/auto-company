@@ -1,0 +1,7 @@
+	Comando SQL para criação do banco de dados da equipe
+	CREATE DATABASE autocompany_concessionaria;
+
+
+
+	Comando SQL para abertura do banco de dados da equipe
+	USE autocompany_concessionaria;

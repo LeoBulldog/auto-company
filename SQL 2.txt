@@ -1,0 +1,90 @@
+	Comandos SQL para criação das tabelas dos integrantes
+
+ Ana Beatriz Carvalho de Oliveira - Automóveis 
+  CREATE TABLE automoveis (
+	id			INT AUTO_INCREMENT PRIMARY KEY,
+	fabricante		VARCHAR (50),
+	modelo			VARCHAR (50),
+	placa			VARCHAR (8),
+	cor			VARCHAR (15),
+	ano			VARCHAR	(4),
+	uf			CHAR 	(2),
+	montadora		VARCHAR	(30),
+	cambioAutomatico	BOOLEAN,	
+	combustivel		VARCHAR	(15),
+	km			INT 	(5),
+	licenciado		BOOLEAN
+	);
+
+
+
+ César Adan Lourenço da Silva - Solicitação de Seguros 
+  CREATE TABLE seguro (
+	id		INT AUTO_INCREMENT PRIMARY KEY;
+	nome		VARCHAR (30),
+	carroSegurado	VARCHAR (20),
+	veiculoTabela	FLOAT 	(10,2),
+	modelo		VARCHAR (20),
+	placa		CHAR 	(6),
+	cidade		VARCHAR (40),
+	endereco	VARCHAR (100),
+	cep		CHAR 	(9),
+	telefone	VARCHAR (10),	
+	email		VARCHAR (30)
+  );
+
+
+
+  Gustavo Gutierry Cavalcante de Sousa - Clientes
+  create table clientes( 
+  	id  int auto_increment primary key,
+  	nome varchar (50),
+  	genero char(1),
+	dtnasc  date,
+	cpf_cnpj varchar (14), 
+	Pfisica boolean,
+	uf char (2),
+	cep varchar(8),
+	telefone int (11),
+	email varchar (30),
+	Autorizacao boolean,
+	comentarios text
+	);
+
+
+
+  Isabela Silva Santos - Locações
+  create table locacoes (
+	id int auto_increment primary key,
+	diadesaida date ,
+	diadedevolucao date,
+	fabricante varchar (30) ,
+	modelo varchar (25) ,
+	placa varchar (12) ,
+	Estadoderetirada char(2) ,
+	Cidadederetirada varchar (30),
+	horadesaida time ,
+	horadedevolucao time ,
+	valor float(6,2) ,
+	localderetirada varchar (30)
+);
+
+
+
+  Leonardo Miranda de Toledo - Funcionários
+  CREATE TABLE funcionarios (
+	id			INT AUTO_INCREMENT PRIMARY KEY,
+	nome		 	VARCHAR(80),
+	sexo		 	CHAR(1),
+	nascimento	 	DATE,
+	idade		 	INT(2),
+	setor		 	VARCHAR(25),
+	cargo		 	VARCHAR(30),
+	tempoEmpresa	 	VARCHAR(10),
+	salario		 	VARCHAR(15),
+	vendeVeiculos	 	BOOLEAN,
+	veiculosVendidos 	INT(2),
+	comissao	 	VARCHAR(15),
+	uf		 	CHAR(2)
+	);
+

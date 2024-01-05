@@ -1,0 +1,93 @@
+<html>
+    <head>
+      <title>Automóveis</title>
+</head>
+<body>
+   <h2>Faça o cadastro do seu Automóvel</h2>
+   <form action="incluirAuto.php" method="post">
+   Fabricante: <input type="text" 
+                name="fabricante" 
+				maxlength="50" 
+				size="50"
+                placeholder="Informe o fabricante do veículo"> 
+   <br>
+    Modelo: <input type="text" 
+                   name="modelo" 
+				   maxlength="50" 
+				   size="50"
+                   placeholder="Informe o modelo do veículo"> 
+   <br>
+    Placa: <input type="text" 
+                name="placa" 
+				maxlength="8" 
+				size="50"
+                placeholder="Informe a placa do veículo"> 
+   <br>
+   Cor: <input type="text" 
+                name="cor" 
+				maxlength="15" 
+				size="50"
+                placeholder="Informe a coloração do veículo"> 
+    <br>
+	Ano: <input type="text" 
+                name="ano" 
+				maxlength="4" 
+				size="50"
+                placeholder="Informe o ano de fabricação">
+    <br>
+    <hr>	
+   UF:
+    <select name="uf">
+    <option value="">Escolha</option>
+    <option value="AC">AC</option>
+    <option value="AL">AL</option>
+    <option value="AP">AM</option>
+    <option value="BA">BA</option>
+    <option value="CE">CE</option>
+	<option value="DF">DF</option>
+    <option value="ES">ES</option>
+    <option value="GO">GO</option>
+    <option value="MA">MA</option>
+    <option value="MT">MT</option>
+	<option value="MS">MS</option>
+    <option value="MG">MG</option>
+    <option value="PA">PA</option>
+    <option value="PB">PB</option>
+    <option value="PR">PR</option>
+	<option value="PE">PE</option>
+    <option value="PI">PI</option>
+    <option value="RJ">RJ</option>
+    <option value="RN">RN</option>
+    <option value="RS">RS</option>
+	<option value="RO">RO</option>
+    <option value="RR">RR</option>
+    <option value="SC">SC</option>
+    <option value="SP">SP</option>
+    <option value="SE">SE</option>
+	<option value="TO">TO</option>
+</select> <br> 
+  Montadora: <input type="text" 
+                name="montadora" 
+				maxlength="30" 
+				size="50"
+                placeholder="Informe o ano de fabricação">	
+	<br>
+	Câmbio Automático: <input type="checkbox" name="cambioAutomatico" id="cambioAutomatico" value="1">
+	<br>
+	Combustível: <input type="text" 
+                name="combustivel" 
+				maxlength="15" 
+				size="50"
+                placeholder="Informe o combustível">	
+	<br>
+	<hr>
+   <legend>Informe a Quilometragem(km) que o carro possui</legend>
+   Km: <input type="number" name="km" maxlength="2" min="0" max="20000"> 
+   <br>
+   Licenciado: <input type="checkbox" name="licenciado" id="licenciado" value="1">
+   <hr>
+   <input type="submit" value="Cadastrar">
+   <input type="reset" value="Limpar Campos">
+</form>
+</body>
+</html>

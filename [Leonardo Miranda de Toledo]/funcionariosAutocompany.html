@@ -1,0 +1,168 @@
+<html>
+	<!-- salvar como funcionariosAutocompany.html na pasta de projetos WWW 
+		 numa pasta chamada AUTO COMPANY
+	-->
+	<head>
+		<title>Cadastro de Funcionários</title>
+	</head>
+	<body style="border-style:dashed; background-color:#E27753;">
+		<h1 style="text-align:center;">Cadastro de Funcionários da Concessionária de Veículos Auto Company</h1>
+		<form	action="cadastrarFuncionario.php"
+				method="post"
+				enctype="multipart/form-data">
+		<input	type="hidden"
+				name="MAX_FILE_SIZE"
+				value="30000">
+			<b>Nome:</b>
+			<input 	type="text"
+					name="nome"
+					maxlength="80"
+					required 
+					placeholder="Digite o nome do funcionário..."
+					size="50">
+			<br>
+			<br>
+			<b>Sexo do funcionário:</b>
+			<input type="radio" name="sexo" value="M" checked> Masculino
+			<input type="radio" name="sexo" value="F"> Feminino
+			<br>
+			<br>
+			<b>Data de Nascimento:</b>
+			<input 	type="date" 
+					name="nascimento"
+					required
+					min="1956-01-01"
+					max="2002-01-01">
+			<br>
+			<br>
+			<b>Idade:</b>
+			<input	type="number"
+					name="idade"
+					value="18"
+					min="18"
+					max="64">
+			<br>
+			<br>
+			<b>Setor no qual trabalha:</b>
+			<input	type="text"
+					name="setor"
+					maxlength="25"
+					required 
+					placeholder="Digite o setor no qual o funcionário trabalha ..."
+					size="40"
+					list="setorConcessionaria">
+					
+			<datalist id="setorConcessionaria">
+				<option>VENDAS DE VEÍCULOS<option>
+				<option>OFICINA<option>
+				<option>DEPARTAMENTO DE PEÇAS<option>
+				<option>ADMINISTRAÇÃO<option>
+			</datalist>
+			<br>
+			<br>
+			<b>Cargo que exerce:</b>
+			<input	type="text"
+					name="cargo"
+					maxlength="25"
+					required 
+					placeholder="Digite o cargo que o funcionário exerce ..."
+					size="40"
+					list="cargoConcessionaria">
+			<datalist id="cargoConcessionaria">
+				<option>Gerente<option>
+				<option>Vendedor<option>
+				<option>Consultoria Técnica<option>
+				<option>Chefe de Oficina<option>
+				<option>Mecânico(a)<option>
+				<option>Caixa<option>
+				<option>Contas a Pagar e Receber<option>
+				<option>Fiscal<option>
+				<option>Recursos Humanos<option>
+				<option>Contabilidade<option>
+				<option>Controladoria<option>
+				<option>Crédito<option>
+			</datalist>
+			<br>
+			<br>
+			<b>Quanto tempo já trabalha na concessionária:</b>
+			<input	type="text"
+					name="tempoEmpresa"
+					maxlength="10"
+					required 
+					placeholder="Digite o tempo que faz que o funcionário trabalha na concessionária ..."
+					size="60">
+			<br>
+			<br>
+			<b>Salário que recebe:</b>
+			<input	type="text"
+					name="salario"
+					maxlength="10"
+					required 
+					min="1000"
+					max="15000"
+					placeholder="R$1000,00"
+					size="25">
+			<br>
+			<br>
+			<b>O funcionário vende veículos?</b>
+			<input type="radio" name="vendeVeiculos" value="Sim" checked> Sim
+			<input type="radio" name="vendeVeiculos" value="Não"> Não
+			
+			<br>
+			<br>
+			<b>Veículos que vendeu neste mês:</b>
+			<input	type="number"
+					name="veiculosVendidos"
+					value="00"
+					min="00"
+					max="99">			
+			<br>
+			<br>
+			<b>Comissão a receber:</b>
+			<input	type="text"
+					name="comissao"
+					maxlength="15"
+					required 
+					min="100"
+					max="2000"
+					placeholder="R$100,00"
+					size="25">
+			<br>
+			<br>
+			<b>Estado da filial onde trabalha:</b>
+			<select name="uf">
+				<option value="">uf</option>
+				<option value="AC">AC</option>
+				<option value="AL">AL</option>
+				<option value="AP">AP</option>
+				<option value="AM">AM</option>
+				<option value="BA">BA</option>
+				<option value="CE">CE</option>
+				<option value="ES">ES</option>
+				<option value="GO">GO</option>
+				<option value="MA">MA</option>
+				<option value="MT">MT</option>
+				<option value="MS">MS</option>
+				<option value="MG">MG</option>
+				<option value="PA">PA</option>
+				<option value="PB">PB</option>
+				<option value="PR">PR</option>
+				<option value="PE">PE</option>
+				<option value="PI">PI</option>
+		        <option value="RJ">RJ</option>
+				<option value="RN">RN</option>
+				<option value="RS">RS</option>
+				<option value="RO">RO</option>
+				<option value="RR">RR</option>
+				<option value="SC">SC</option>
+				<option value="SP">SP</option>
+				<option value="SE">SE</option>
+				<option value="TO">TO</option>
+				<option value="DF">DF</option>
+			</select>
+			<br>
+			<br>
+			<br>
+			<input type="submit" value="Inserir Funcionário">
+	</body>
+</html>

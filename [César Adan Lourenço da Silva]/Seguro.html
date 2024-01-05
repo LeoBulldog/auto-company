@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <title>Seguro de Carros</title>
+    </head>
+    <style>
+        body {
+            margin: 50px;
+            text-align: center;
+            border: 2px solid;
+            width: 600px;
+            height: 400px;
+            margin-left: 350px;
+            border-radius: 15px;
+        }
+
+    </style>
+    <doby>
+        <h1>Seguro Automotivo</h1>
+        <form 
+        action="seguro.php"
+        method="GET"><br>
+
+        Nome:
+            <input type="text" name="nome"
+            placeholder="Nome Completo"
+            size="30"
+            required
+            > <hr>
+        Montadora:
+            <input type="text" name="carro"
+            placeholder="volkswagen"
+            size="20"
+            required
+            > 
+        Modelo:
+            <input type="text" name="modelo"
+            placeholder="Gol G5"
+            size="20"
+            required
+            > <hr>
+        Preço de Tabela do Veiculo:
+            <input type="number" name="tabela"
+            placeholder="10.000,00"
+            size="20"
+            min="10000,00"
+            required
+            > 
+        Placa:
+            <input type="text" name="placa"
+            placeholder="ABC-123"
+            size="10"
+            required
+            > <hr>
+            Endereço:
+            <input type="text" name="enderenco"
+            placeholder="Endereço completo"
+            size="50"
+            required
+            > <hr>
+        Estado:
+            <select name="cidade" required >
+                <option value=""> Escolha </option>
+                <option value="SP">São paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goias</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pára</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Piauí</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+                <option value="DF">Dsitro Federal</option>
+        </select> 
+        Cep:
+        <input type="number" name="cep"
+            placeholder="00000-000"
+            size="8"
+            required
+            > <br>
+        DDD:
+            <input type="number" name="ddd"
+            placeholder="00"
+            size="0"
+            min="00"
+            maxhr="99"
+            required>
+        Telefone:
+            <input type="number" name="telefone"
+            placeholder="00000-0000"
+            size="9"
+            required
+            > <hr>
+        E-mail:
+            <input type="email" name="email"
+            size="20"
+            required
+            >
+                $nome                   = $_GET["nome"];
+    $carroSegurado          = $_GET["carro"];
+    $veiculoTabela          = $_GET["tabela"];
+    $modelo                 = $_GET["modelo"];
+    $placa                  = $_GET["placa"];
+    $cidade                 = $_GET["cidade"];
+    $enderenco              = $_GET["enderenco"];
+    $cep                    = $_GET["cep"];
+    $ddd                    = $_GET["ddd"];
+    $telefone               = $_GET["telefone"];
+    $email                  = $_GET["email"];
+    
+        <input type="submit" value="Enviar">
+
+        </form>
+    </doby>
+</html>
